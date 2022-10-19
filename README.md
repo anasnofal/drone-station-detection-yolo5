@@ -7,7 +7,7 @@ webcam in computer device
 
 1-Open command line (or terminal), clone the reopsitory, then navigate to repo directory
 ```
-cd Playing_Cards
+cd drone-station-detection-yolo5
 ```
 2-Make a virtual environment
 ```
