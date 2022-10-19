@@ -5,7 +5,6 @@ you must have:
 python 3.7 or above
 webcam in computer device
 
-Installation
 1-Open command line (or terminal), clone the reopsitory, then navigate to repo directory
 ```
 cd Playing_Cards
