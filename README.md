@@ -11,7 +11,7 @@ cd drone-station-detection-yolo5
 ```
 2-Make a virtual environment
 ```
-python -3 -m venv py-env
+python3 -m venv py-env
 ```
 3-Activate virtual environment
 ```
