@@ -23,5 +23,5 @@ pip install -r requirements.txt
 ```
 5-then you can run the program
 ```
-python main.py --path 0 for cam or video path
+python main.py --path 0
 ```
