@@ -23,5 +23,5 @@ pip install -r requirements.txt
 ```
 5-then you can run the program
 ```
-python main.py --path 0
+python main.py --path 'WhatsApp Video 2022-11-28 at 5.41.40 AM.mp4'
 ```
