@@ -2,26 +2,20 @@
 
 Prerequisites
 you must have:
-python 3.7 or above
-webcam in computer device
+docker
 
 1-Open command line (or terminal), clone the reopsitory, then navigate to repo directory
 ```
 cd drone-station-detection-yolo5
 ```
-2-Make a virtual environment
+
+2 - build the docker image 
 ```
-python3 -m venv py-env
+docker build -t drone .
 ```
-3-Activate virtual environment
+
+3-then you can run the program
 ```
-py-env\Scripts\activate
+docker run --rm -it -v $(pwd):/app drone python main.py --path 'WhatsApp Video 2022-11-28 at 5.41.40 AM.mp4' --model 'best.pt' --output "output.mp4"
 ```
-4-Install requirements
-```
-pip install -r requirements.txt
-```
-5-then you can run the program
-```
-python main.py --path 'WhatsApp Video 2022-11-28 at 5.41.40 AM.mp4' --model 'best.py'
-```
+4- you will find an output.mp4 where you can see the result. 
