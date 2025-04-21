@@ -7,7 +7,7 @@ import cv2
 import argparse
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--path", required=True,help="path to input")
-ap.add_argument("-i", "--model", required= True,help = " path to model" )
+ap.add_argument("-m", "--model", required= True,help = " path to model" )
 args = vars(ap.parse_args())
 #Loding the model 
 model = torch.hub.load('ultralytics/yolov5', 'custom', path=args['model'], force_reload=True)
