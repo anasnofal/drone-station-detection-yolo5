@@ -1,5 +1,5 @@
 # USAGE
-# python einstein_face.py --path 0 for cam or video path
+
 import torch
 from matplotlib import pyplot as plt
 import numpy as np
@@ -7,9 +7,10 @@ import cv2
 import argparse
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--path", required=True,help="path to input")
+ap.add_argument("-i", "--model", required= True,help = " path to model" )
 args = vars(ap.parse_args())
 #Loding the model 
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='D:/Python project/drone/best.pt', force_reload=True)
+model = torch.hub.load('ultralytics/yolov5', 'custom', path=args['model'], force_reload=True)
 model.conf = 0.5  # confidence threshold (0-1)
 model.iou = 0.5  # NMS IoU threshold (0-1)  
 cap = cv2.VideoCapture(args['path'])
