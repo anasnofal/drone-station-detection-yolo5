@@ -31,4 +31,4 @@ WORKDIR /app
 COPY . .
 
 # Set the default command
-CMD ["python", "your_script.py"]
+CMD ["python", "main.py.py"]
